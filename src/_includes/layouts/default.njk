@@ -1,0 +1,46 @@
+---
+csp: "default-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; script-src 'self' 'unsafe-inline' 'unsafe-eval'; img-src 'self' https://github.com https://avatars.githubusercontent.com data: http://cdn.tailwindcss.com;"
+---
+
+{% set css %}{% include "src/styles/main.css" %}{% endset %}
+{% set js %}{% include "src/scripts/minified/bundle.min.js" %}{% endset %}
+
+<!doctype html>
+<html lang="{{ page.lang }}" dir="{{ dir }}">
+
+  <head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="Content-Security-Policy" content="{{ csp }}"/>
+    <meta name="keywords" content="{{ keywords }}"/>
+    <meta name="description" content="{{ description }}"/>
+    <meta name="theme-color" content="#FEE04A"/>
+    <title>{{ title }} | Vic Shóstak's website.</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet"/>
+    <link rel="alternate" hreflang="{{ page.lang }}" href="https://shostak.dev{{ page.url }}"/>
+    {% for link in page.url | locale_links %}
+      <link rel="alternate" hreflang="{{ link.lang }}" href="https://shostak.dev{{ link.url }}"/>
+    {% endfor %}
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png"/>
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon"/>
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml"/>
+    <link rel="icon" href="/favicon.png" sizes="any"/>
+    <link rel="manifest" href="/manifest.json"/>
+    <style>{{css | postcss | safe}}</style>
+  </head>
+
+  <body itemscope="itemscope" itemtype="http://schema.org/WebPage">
+    <main>
+      {% include "components/mobile-nav.njk" %}
+      {{ content | safe }}
+      {% include "images/swoosh.njk" %}
+      {% include "components/dialogs.njk" %}
+      {% include "components/cookie-confirm-toast.njk" %}
+    </main>
+    <script>{{ js | safe }}</script>
+  </body>
+
+</html>

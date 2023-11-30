@@ -1,0 +1,28 @@
+<div class="p-4 rounded-3xl">
+    {% include "images/bird.njk" %}
+    <h1 class="text-base-content">
+        <span class="text-7xl">{{ 'pages.index.left_column.block_1.hello' | t }}</span><br/>{{ 'pages.index.left_column.block_1.author' | t }}
+    </h1>
+</div>
+<div class="grid lg:grid-cols-2 xl:grid-cols-1 gap-8">
+    <div class="py-4 px-8 border-2 border-base-content rounded-3xl">
+        <h2>{{ 'pages.index.left_column.block_2.heading' | t }}</h2>
+        <p>{{ 'pages.index.left_column.block_2.content' | t }}</p>
+        <p>
+            <button class="btn rounded-box" onclick="modal_my_skills.showModal()">
+                {{ 'pages.index.left_column.block_2.button' | t }}
+                {% include "icons/arrow-right.njk" %}
+            </button>
+        </p>
+    </div>
+    <div class="py-4 px-8 border-2 border-base-content rounded-3xl">
+        <h2>{{ 'pages.index.left_column.block_3.heading' | t }}</h2>
+        <p>{{ 'pages.index.left_column.block_3.content' | t }}</p>
+        <p>
+            <button class="btn rounded-box" onclick="modal_work_philosophy.showModal()">
+                {{ 'pages.index.left_column.block_3.button' | t }}
+                {% include "icons/arrow-right.njk" %}
+            </button>
+        </p>
+    </div>
+</div>

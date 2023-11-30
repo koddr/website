@@ -1,0 +1,33 @@
+{
+  "name": "Vic Shóstak's website",
+  "short_name": "shostak.dev",
+  "description": "The Vic Shóstak's PWA (Progressive Web App) website.",
+  "background_color": "#FEE04A",
+  "theme_color": "#FEE04A",
+  "display": "standalone",
+  "orientation": "portrait",
+  "start_url": ".",
+  "icons": [
+    {
+      "src": "manifest-touch-icon.svg",
+      "type": "image/svg+xml",
+      "sizes": "any"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "manifest-desktop-screenshot.jpg",
+      "sizes": "1280x720",
+      "type": "image/jpeg",
+      "form_factor": "wide",
+      "label": "Desktop homescreen of the Vic Shóstak's PWA website"
+    },
+    {
+      "src": "manifest-mobile-screenshot.jpg",
+      "sizes": "720x1280",
+      "type": "image/jpeg",
+      "form_factor": "narrow",
+      "label": "Mobile homescreen of the Vic Shóstak's PWA website"
+    }
+  ]
+}

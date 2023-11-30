@@ -1,0 +1,44 @@
+<div class="hidden xl:grid xl:grid-cols-3 gap-4">
+    <div class="lg:col-span-2 p-8 rounded-3xl border-2 border-accent h-fit">
+        <div class="flex flex-row justify-center gap-4">
+            <a class="tooltip tooltip-bottom tooltip-primary" data-tip="{{ 'pages.index.right_column.block_1.view_github' | t }}" href="{{ templateData.social_links.github }}" target="_blank">
+                {% include "logos/github.njk" %}
+            </a>
+            <a class="tooltip tooltip-bottom tooltip-primary" data-tip="{{ 'pages.index.right_column.block_1.view_dribbble' | t }}" href="{{ templateData.social_links.dribbble }}" target="_blank">
+                {% include "logos/dribbble.njk" %}
+            </a>
+            <a class="tooltip tooltip-bottom tooltip-primary" data-tip="{{ 'pages.index.right_column.block_1.view_dev_to' | t }}" href="{{ templateData.social_links.dev_to }}" target="_blank">
+                {% include "logos/dev-to.njk" %}
+            </a>
+            <a class="tooltip tooltip-bottom tooltip-primary" data-tip="{{ 'pages.index.right_column.block_1.view_linkedin' | t }}" href="{{ templateData.social_links.linkedin }}" target="_blank">
+                {% include "logos/linkedin.njk" %}
+            </a>
+        </div>
+    </div>
+    <div class="xl:col-span-1 h-fit">
+        {% include "components/theme-switcher.njk" %}
+    </div>
+</div>
+<div class="hidden xl:block py-4 px-8 rounded-3xl border-2 border-primary">
+    <h2>{{ 'pages.index.right_column.block_2.heading' | t }}</h2>
+    <p>{{ 'pages.index.right_column.block_2.content' | t | safe }}</p>
+    <p>
+        <a class="btn rounded-box" href="/{% if page.lang == 'en' %}ru/{% endif %}">
+            {% include "icons/language.njk" %}
+            {{ 'pages.index.right_column.block_2.button' | t }}
+        </a>
+    </p>
+</div>
+<div class="p-12 rounded-3xl bg-primary shadow-md">
+    {% include "images/coder.njk" %}
+</div>
+<div class="py-4 px-8 rounded-3xl border-2 border-accent text-sm h-fit">
+    <p>
+        &copy;&nbsp;2010-<span class="current-year"></span>,
+        <a href="{{ templateData.website_url }}/{% if page.lang == 'ru' %}ru/{% endif %}">{{ 'pages.index.right_column.block_3.author' | t }}</a>.
+    </p>
+    <p>{{ 'pages.index.right_column.block_3.content' | t | safe }}</p>
+    <p>
+        &#10033;&nbsp;<a class="link" href="/{% if page.lang == 'ru' %}ru/{% endif %}legal">{{ 'pages.index.right_column.block_3.link' | t }}</a>.
+    </p>
+</div>

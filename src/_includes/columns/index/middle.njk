@@ -1,0 +1,61 @@
+<div class="grid sm:grid-cols-2 gap-8">
+    <div class="grid gap-8 self-center">
+        <div class="py-4 px-8 bg-secondary rounded-3xl text-white h-fit">
+            <h2 class="text-white">{{ 'pages.index.middle_column.block_1.heading'| t }}</h2>
+            <p class="text-white">{{ 'pages.index.middle_column.block_1.content'| t }}</p>
+        </div>
+        <div class="py-4 px-8 border-2 border-secondary rounded-3xl h-fit">
+            <h3>{{ 'pages.index.middle_column.block_2.heading_1'| t }}</h3>
+            <p>
+                <a class="link" href="/{% if page.lang == 'ru' %}ru/{% endif %}microservices">
+                    {{ 'pages.index.middle_column.block_2.link_1'| t }}&hellip;&nbsp;&rarr;
+                </a>
+            </p>
+            <h3>{{ 'pages.index.middle_column.block_2.heading_2'| t }}</h3>
+            <p>
+                <a class="link" href="/{% if page.lang == 'ru' %}ru/{% endif %}ux-efficiency-reviews">
+                    {{ 'pages.index.middle_column.block_2.link_2'| t }}&hellip;&nbsp;&rarr;
+                </a>
+            </p>
+        </div>
+    </div>
+    <div class="self-center lg:place-self-center">
+        {% include "components/index/phone-mockup.njk" %}
+    </div>
+</div>
+<div class="grid gap-8">
+    <div class="py-4 px-8 bg-accent text-always-black rounded-3xl">
+        <h2 class="text-always-black">{{ 'pages.index.middle_column.block_3.heading'| t }}</h2>
+        <p>{{ 'pages.index.middle_column.block_3.content'| t }}</p>
+    </div>
+</div>
+<div class="grid sm:grid-cols-3 gap-8">
+    <a href="{{ templateData.projects.gowebly }}" class="project_link" data-tip="{{ 'pages.index.middle_column.block_5.view_gowebly'| t }}" target="_blank">
+        {% include "logos/gowebly.njk" %}
+        <h3 class="text-always-black mt-2">Gowebly</h3>
+        <p>{{ 'pages.index.middle_column.block_5.content'| t }}</p>
+    </a>
+    <a href="{{ templateData.projects.secretium }}" class="project_link" data-tip="{{ 'pages.index.middle_column.block_6.view_secretium'| t }}" target="_blank">
+        {% include "logos/secretium.njk" %}
+        <h3 class="text-always-black mt-2">Secretium</h3>
+        <p>{{ 'pages.index.middle_column.block_6.content'| t }}</p>
+    </a>
+    <a href="{{ templateData.projects.cgapp }}" class="project_link" data-tip="{{ 'pages.index.middle_column.block_7.view_cgapp'| t }}" target="_blank">
+        {% include "logos/cgapp.njk" %}
+        <h3 class="text-always-black mt-2">Create Go App</h3>
+        <p>{{ 'pages.index.middle_column.block_7.content'| t }}</p>
+    </a>
+</div>
+<div class="grid lg:grid-cols-3 lg:gap-8 items-center py-4 px-8 border-2 border-accent rounded-3xl">
+    <div class="lg:col-span-2">
+        <p>{{ 'pages.index.middle_column.block_4.content'| t }}</p>
+    </div>
+    <div class="lg:col-span-1">
+        <a
+            href="mailto:{{ envData.email }}?subject={{ 'pages.index.middle_column.block_4.email_subject'| t }}"
+            class="btn btn-block rounded-box"
+            target="_blank">
+            {{ 'pages.index.middle_column.block_4.button'| t }}
+        </a>
+    </div>
+</div>

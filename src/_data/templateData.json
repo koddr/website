@@ -1,0 +1,15 @@
+{
+  "website_name": "shostak.dev",
+  "website_url": "https://shostak.dev",
+  "social_links": {
+    "github": "https://github.com/koddr",
+    "dribbble": "https://dribbble.com/koddr",
+    "dev_to": "https://dev.to/koddr",
+    "linkedin": "https://www.linkedin.com/in/koddr/"
+  },
+  "projects": {
+    "gowebly": "https://gowebly.org",
+    "secretium": "https://secretium.org",
+    "cgapp": "https://github.com/create-go-app/cli"
+  }
+}

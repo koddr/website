@@ -1,0 +1,14 @@
+# macOS specific.
+.DS_Store
+
+# Directories to ignore.
+.idea/
+.vscode/
+node_modules/
+
+# Environment.
+.env
+
+# Temporary files.
+bun.lockb
+dist/

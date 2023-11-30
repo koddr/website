@@ -1,0 +1,201 @@
+{
+    "dir": "ltr",
+    "components": {
+        "cookie_confirm": {
+            "content": "Don't worry, I'm using cookies to offer you a better\nbrowsing experience. Like any other websites.",
+            "button": "Okay, close!"
+        },
+        "theme_switcher": {
+            "view_toast": "Switch color theme"
+        },
+        "partnership_banner": {
+            "heading": "Want to hire me?",
+            "content_1": "To reduce processing time, please write me a message to Telegram or Email.",
+            "content_2": "In the message be sure to include: name & general description of the project, technical specification, link to CJM (if user interaction is required) and desired deadlines.",
+            "content_3": "I work in the UTC+03:00 time zone. Your messages will be considered on working days, from 11:00 to 18:00.",
+            "button_1": "Write to Telegram",
+            "button_2": "Write to Email",
+            "email_subject": "Hire"
+        },
+        "mobile_nav": {
+            "open": "Menu",
+            "close": "Close",
+            "block_1": {
+                "heading": "Effective assistance",
+                "link_1": "Microservices",
+                "link_2": "UX reviews"
+            },
+            "block_2": {
+                "heading": "Contact me",
+                "link_1": "Write to Telegram",
+                "link_2": "Write to Email",
+                "link_3": "Add on LinkedIn",
+                "email_subject": "Hello"
+            },
+            "block_3": {
+                "heading": "Social links",
+                "link_1": "GitHub profile",
+                "link_2": "Dribbble portfolio",
+                "link_3": "Dev.to blog"
+            },
+            "block_4": {
+                "heading": "Website options",
+                "link_1": "Change color theme",
+                "link_2": "Переключить на русский"
+            }
+        },
+        "index": {
+            "phone_mockup": {
+                "name_you": "You",
+                "name_you_short": "Y",
+                "name_vic_shostak": "Vic Shóstak",
+                "msg_you_1": "Hey, Vic! Can you help me?",
+                "msg_vic_shostak_1": "Greetings! Sure.",
+                "msg_you_2": "Perfect, I have got an awesome business idea...",
+                "msg_vic_shostak_2": "I'll take the time to bring it to production. Send me the details to Telegram!",
+                "button": "Send message"
+            }
+        }
+    },
+    "modals": {
+        "my_skills": {
+            "block_1": {
+                "heading": "My skills",
+                "content": "In more than 13 years of successful work in the IT industry, my technology stack has changed many times, but my technical expertise has always remained at a high level."
+            },
+            "block_2": {
+                "heading": "Backend",
+                "used_frameworks": "The frameworks and libraries used:",
+                "go_content": "my primary language for realizing projects of various complexity and functionality (from microservices to monoliths). It perfectly copes with a wide range of tasks for developing highly efficient backend services and has proved it many times.",
+                "python_content": "my secondary language, e.g. for artificial intelligence (AI) projects or in cases where the customer is unable/willing to use Go.",
+                "n8n_content": "I use this product to develop a serverless architecture and API-gateway approach, as well as to create Telegram bots."
+            },
+            "block_3": {
+                "heading": "Databases",
+                "postgres_content": "my primary database for storing data. Also, I use its built-in LISTEN/NOTIFY functionality and JSONB fields.",
+                "redis_content": "my primary in-memory database for caching data and working with brokers (e.g. Asynq or RabbitMQ).",
+                "sqlite_content": "my secondary database for simple projects and static websites where using PostgreSQL doesn't make sense."
+            },
+            "block_4": {
+                "heading": "Frontend",
+                "vue_content": "my primary web framework. I'm a long-time fan of it (since version 2.x), so I implement all SPA projects in Vue ecosystem (Typescript).",
+                "tailwind_content": "my primary CSS framework for creating user interface. I often use it together with the daisyUI component library.",
+                "htmx_content": "I always support such technologies and libraries because they allow every backend developer to become even more efficient and implement frontend logic without going outside the usual stack.",
+                "bun_content": "I use this modern, incredibly fast and backwards-compatible Node.js JavaScript runtime.",
+                "vite_content": "my primary tool for dev environment, creating and optimizing builds of the frontend part of the project."
+            },
+            "block_5": {
+                "heading": "UX/UI design",
+                "figma_content": "my primary tool for UX prototyping and creating UI design for websites and mobile apps."
+            },
+            "block_6": {
+                "heading": "CI/CD and deploy tools",
+                "docker_content": "I place all my Go/Python projects in Docker images for later deployment to a remote server or cloud infrastructure as isolated containers.",
+                "actions_runners_content": "to automate the process of deploying and code base verification/validation.",
+                "goreleaser_content": "to automate the process of building a Go project for different architectures and OS, as well as, publishing to Homebrew and Docker Hub."
+            }
+        },
+        "work_philosophy": {
+            "block_1": {
+                "heading": "Work philosophy",
+                "content_1": "All of my projects have excellent documentation and clear code.",
+                "content_2": "But, I believe it's important not to just write clean code and create a supported infrastructure or a beautiful UI, but to look for the root of the problem in the task at hand.",
+                "content_3": "This approach to problem solving allows implementing complex software solutions that can be supported by any development team."
+            },
+            "block_2": {
+                "heading": "Working process",
+                "content": "Here's an example describing my approach to solving a task that will give you an understanding of my working process.",
+                "schema": {
+                    "content_1": "Task\nstatement",
+                    "content_2": "Analysis of the\ntechnical task/CJM",
+                    "content_3": "Working out\nan optimal solution",
+                    "content_4": "Approval of the\nrealization plan",
+                    "content_5": "Realization",
+                    "content_6": "Test bench\npreparation",
+                    "content_7": "Realization\ntesting",
+                    "content_8": "Making edits",
+                    "content_9": "Final testing",
+                    "content_10": "Documentation\nfor realization",
+                    "content_11": "Transfer\nto customer"
+                },
+                "scroll_to_right": "Scroll to the right"
+            },
+            "block_3": {
+                "heading": "Support of the realized projects",
+                "content_1": "I provide free support (within the original technical specification or CJM) for all realized projects within 14 working days after they are transferred to the customer.",
+                "content_2": "A longer period is agreed upon after the expiration of the free support period on an individual basis."
+            }
+        }
+    },
+    "pages": {
+        "index": {
+            "left_column": {
+                "block_1": {
+                    "hello": "Hello,",
+                    "author": "I'm Vic Shóstak."
+                },
+                "block_2": {
+                    "heading": "Who am I?",
+                    "content": "Software Engineer with excellent UX/UI knowledge and 13+ years of practical experience in multiple technological areas.",
+                    "button": "My skills"
+                },
+                "block_3": {
+                    "heading": "Philosophy of my work",
+                    "content": "First of all, I'm developer who know a lot about comfortable development and support large projects in the long run.",
+                    "button": "Read more"
+                }
+            },
+            "middle_column": {
+                "block_1": {
+                    "heading": "Effective assistance",
+                    "content": "I'm ready to share my experience to solve your business objectives."
+                },
+                "block_2": {
+                    "heading_1": "Microservices",
+                    "link_1": "Microservices allow your business to accept more and more orders",
+                    "heading_2": "UX reviews",
+                    "link_2": "Every successful business has the most effective web or mobile apps"
+                },
+                "block_3": {
+                    "heading": "My projects",
+                    "content": "Another passion of mine is creating useful and Open Source tools for developers and businesses around the world."
+                },
+                "block_4": {
+                    "content": "Yes, I'm always looking for new collaborators to create great products and services. If you have an idea for an open source project, get in touch with me!",
+                    "button": "Write message",
+                    "email_subject": "Collaborate"
+                },
+                "block_5": {
+                    "content": "A next-generation CLI tool for build amazing web apps.",
+                    "view_gowebly": "View Gowebly website"
+                },
+                "block_6": {
+                    "content": "A smart self-hosted tool for sharing secrets to your friends.",
+                    "view_secretium": "View Secretium website"
+                },
+                "block_7": {
+                    "content": "A ready-made Go project with frontend & deploy automation.",
+                    "view_cgapp": "View Create Go App repository"
+                }
+            },
+            "right_column": {
+                "block_1": {
+                    "view_github": "View my GitHub profile",
+                    "view_dribbble": "View my Dribbble portfolio",
+                    "view_dev_to": "View my Dev.to blog",
+                    "view_linkedin": "View my LinkedIn profile"
+                },
+                "block_2": {
+                    "heading": "Я говорю на русском",
+                    "content": "Основные языки для текстового общения со мной&nbsp;&mdash; русский и английский.",
+                    "button": "Переключить на русский"
+                },
+                "block_3": {
+                    "author": "Vic Shóstak",
+                    "content": "All illustrations & textual content are crafted by Vic Shóstak with&nbsp;&#10084; for humans and robots.",
+                    "link": "Information on service provision"
+                }
+            }
+        }
+    }
+}

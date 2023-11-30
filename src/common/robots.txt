@@ -1,0 +1,8 @@
+User-agent: Yandex
+Host: https://shostak.dev
+
+User-agent: Googlebot
+
+User-agent: *
+
+Sitemap: https://shostak.dev/sitemap.xml
