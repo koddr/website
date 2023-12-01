@@ -1,0 +1,80 @@
+<div class="flex flex-col sm:flex-row gap-8 items-center p-4">
+    <a class="hidden sm:block p-5 border-2 border-accent rounded-3xl tooltip tooltip-bottom tooltip-primary" data-tip="{{ 'components.back_to_home' | t }}" href="/{% if page.lang == 'ru' %}ru/{% endif %}">
+        {% include "icons/arrow-left.njk" %}
+    </a>
+    <h1 class="text-base-content m-0">
+        <span class="text-5xl sm:text-7xl">{{ 'pages.service_provision.heading' | t }}</span><br/>{{ 'pages.service_provision.sub_heading' | t }}
+    </h1>
+</div>
+<div class="grid xl:grid-cols-2 gap-8">
+    <div class="py-4 px-8 border-2 border-secondary rounded-3xl">
+        <h2>{{ 'pages.service_provision.block_1.heading' | t }}</h2>
+        <p>{{ 'pages.service_provision.block_1.content' | t }}</p>
+        <p>
+            {{ 'pages.service_provision.block_1.business_name' | t }}<br/>{{ 'pages.service_provision.block_1.ogrnip_name' | t }}
+            {{ envData.legal_info.OGRNIP }}<br/>{{ 'pages.service_provision.block_1.inn_name' | t }}
+            {{ envData.legal_info.INN }}
+        </p>
+    </div>
+    <div class="py-4 px-8 border-2 border-accent rounded-3xl text-sm">
+        <h3>
+            &#9888;&nbsp;{{ 'pages.service_provision.block_2.heading' | t }}
+            <span class="current-year"></span>
+        </h3>
+        <p>{{ 'pages.service_provision.block_2.content_1' | t }}</p>
+        <p>
+            {{ 'pages.service_provision.block_2.content_2' | t }}
+            <a href="mailto:{{ envData.email }}">{{ envData.email }}</a>
+        </p>
+        <p>{{ 'pages.service_provision.block_2.content_3' | t }}</p>
+    </div>
+</div>
+<div class="py-4 px-8 border-2 border-base-content rounded-3xl h-fit">
+    <div class="grid xl:grid-cols-3 xl:gap-8">
+        <div class="xl:col-span-1">
+            <h2>{{ 'pages.service_provision.block_3.heading' | t }}</h2>
+            <p>{{ 'pages.service_provision.block_3.content' | t }}</p>
+        </div>
+        <div class="xl:col-span-2 overflow-x-auto">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>{{ 'pages.service_provision.block_3.table.column_name_1' | t }}</th>
+                        <th>{{ 'pages.service_provision.block_3.table.column_name_2' | t }}</th>
+                        <th>{{ 'pages.service_provision.block_3.table.column_name_3' | t }}</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>{{ 'pages.service_provision.block_3.pdf_oferta' | t }}</td>
+                        <td>
+                            <a href="#" class="btn btn-sm rounded-box">{{ 'pages.service_provision.block_3.button' | t }}</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>{{ 'pages.service_provision.block_3.pdf_politics' | t }}</td>
+                        <td>
+                            <a href="#" class="btn btn-sm rounded-box">{{ 'pages.service_provision.block_3.button' | t }}</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>{{ 'pages.service_provision.block_3.pdf_sample_contract_1' | t }}</td>
+                        <td>
+                            <a href="#" class="btn btn-sm rounded-box">{{ 'pages.service_provision.block_3.button' | t }}</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>{{ 'pages.service_provision.block_3.pdf_payment' | t }}</td>
+                        <td>
+                            <a href="#" class="btn btn-sm rounded-box">{{ 'pages.service_provision.block_3.button' | t }}</a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

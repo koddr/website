@@ -47,6 +47,8 @@ jobs:
         env:
           SHOSTAK_DEV_EMAIL: ${{ secrets.SHOSTAK_DEV_EMAIL }}
           SHOSTAK_DEV_TELEGRAM: ${{ secrets.SHOSTAK_DEV_TELEGRAM }}
+          SHOSTAK_DEV_LEGAL_INFO_OGRNIP: ${{ secrets.SHOSTAK_DEV_LEGAL_INFO_OGRNIP }}
+          SHOSTAK_DEV_LEGAL_INFO_INN: ${{ secrets.SHOSTAK_DEV_LEGAL_INFO_INN }}
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v2
         with:

@@ -1,6 +1,7 @@
 {
     "dir": "ltr",
     "components": {
+        "back_to_home": "Back to home",
         "cookie_confirm": {
             "content": "Don't worry, I'm using cookies to offer you a better\nbrowsing experience. Like any other websites.",
             "button": "Okay, close!"
@@ -81,6 +82,7 @@
                 "vue_content": "my primary web framework. I'm a long-time fan of it (since version 2.x), so I implement all SPA projects in Vue ecosystem (Typescript).",
                 "tailwind_content": "my primary CSS framework for creating user interface. I often use it together with the daisyUI component library.",
                 "htmx_content": "I always support such technologies and libraries because they allow every backend developer to become even more efficient and implement frontend logic without going outside the usual stack.",
+                "static_generators_content": "my main engines for creating static websites and public documentation.",
                 "bun_content": "I use this modern, incredibly fast and backwards-compatible Node.js JavaScript runtime.",
                 "vite_content": "my primary tool for dev environment, creating and optimizing builds of the frontend part of the project."
             },
@@ -192,9 +194,40 @@
                 },
                 "block_3": {
                     "author": "Vic Shóstak",
-                    "content": "All illustrations & textual content are crafted by Vic Shóstak with&nbsp;&#10084; for people and robots.",
+                    "content": "All rights reserved. Every illustrations & textual content are crafted by Vic Shóstak with&nbsp;&#10084; for people and robots.",
                     "link": "Information on service provision"
                 }
+            }
+        },
+        "service_provision": {
+            "heading": "Information",
+            "sub_heading": "on service provision",
+            "block_1": {
+                "heading": "I'm working officially",
+                "content": "As an officially registered individual entrepreneur (IE), I have the legal right to provide outsourcing services in the area of IT to companies and private persons on the territory of the Russian Federation.",
+                "business_name": "IE Shostak Victor Sergeevich",
+                "ogrnip_name": "OGRNIP",
+                "inn_name": "INN"
+            },
+            "block_2": {
+                "heading": "Work with international customers in",
+                "content_1": "Due to the impossibility of payment for my work on outsourcing services in the area of IT by international companies or private persons who do not have official representative offices or are not Russian tax residents, I can no longer collaborate with such customers.",
+                "content_2": "If you are an international company or a private person and would like to get more information about the possibility of collaboration with me, please write to email:",
+                "content_3": "I apologize for such limitations! I hope the world will be open again soon."
+            },
+            "block_3": {
+                "heading": "Documents",
+                "content": "List of legal documents, sample service contracts for companies and private persons, payment details and other documents for review.",
+                "table": {
+                    "column_name_1": "#",
+                    "column_name_2": "Name",
+                    "column_name_3": "PDF link"
+                },
+                "pdf_oferta": "Public offer",
+                "pdf_politics": "Privacy policy and personal data processing",
+                "pdf_sample_contract_1": "Sample contract for the provision of outsourcing services in the area of IT on a fee-for-service basis",
+                "pdf_payment": "Payment details",
+                "button": "Download"
             }
         }
     }

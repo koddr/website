@@ -7,15 +7,11 @@
         @apply max-w-screen-3xl mx-auto antialiased prose prose-h2:mt-6 prose-h3:mt-6 prose-img:m-0 prose-a:decoration-2 prose-a:underline-offset-2 prose-a:decoration-secondary hover:prose-a:no-underline;
     }
 
-    details.dropdown[open] summary::after {
-        content: attr(data-open);
-    }
-
-    details.dropdown:not([open]) summary::after {
-        content: attr(data-close);
-    }
-
     details.dropdown ul>li>a {
+        @apply text-base-100;
+    }
+
+    details.dropdown ul>li>a:focus {
         @apply text-base-100;
     }
 

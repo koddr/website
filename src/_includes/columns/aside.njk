@@ -1,6 +1,6 @@
 <div class="hidden xl:grid xl:grid-cols-3 gap-4">
-    <div class="lg:col-span-2 p-8 rounded-3xl border-2 border-accent h-fit">
-        <div class="flex flex-row justify-center gap-4">
+    <div class="xl:col-span-2 p-8 rounded-3xl border-2 border-accent h-fit">
+        <div class="flex flex-row justify-center gap-3">
             <a class="tooltip tooltip-bottom tooltip-primary" data-tip="{{ 'pages.index.right_column.block_1.view_github' | t }}" href="{{ templateData.social_links.github }}" target="_blank">
                 {% include "logos/github.njk" %}
             </a>
@@ -39,6 +39,6 @@
     </p>
     <p>{{ 'pages.index.right_column.block_3.content' | t | safe }}</p>
     <p>
-        &#10033;&nbsp;<a class="link" href="/{% if page.lang == 'ru' %}ru/{% endif %}legal">{{ 'pages.index.right_column.block_3.link' | t }}</a>.
+        &#10033;&nbsp;<a class="link" href="/{% if page.lang == 'ru' %}ru/{% endif %}service-provision">{{ 'pages.index.right_column.block_3.link' | t }}</a>.
     </p>
 </div>

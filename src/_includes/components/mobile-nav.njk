@@ -2,13 +2,20 @@
         text-sm xl:hidden">
     <div class="grid grid-cols-3 gap-8">
         <div class="col-span-2 self-center">
-            <a class="font-bold text-neutral no-underline" href="{{ templateData.website_url }}">
-                {{ templateData.website_name | upper }}
+            <a class="font-bold text-neutral no-underline" href="/{% if locale == 'ru' %}ru/{% endif %}">
+                {% if page.url == '/' or page.url == '/ru/' %}
+                    {{ templateData.website_name | upper }}
+                {% else %}
+                    {% include "icons/arrow-left-mobile.njk" %}
+                {% endif %}
             </a>
         </div>
         <div class="col-span-1 place-self-end">
             <details class="dropdown dropdown-end">
-                <summary class="btn text-base-100 btn-outline btn-sm rounded-box" data-open="{{ 'components.mobile_nav.close' | t }}" data-close="{{ 'components.mobile_nav.open' | t }}"></summary>
+                <summary class="btn text-base-100 btn-outline btn-sm rounded-box">
+                    <span class="[[open]>*>&]:hidden">{{ 'components.mobile_nav.open' | t }}</span>
+                    <span class="hidden [[open]>*>&]:inline">{{ 'components.mobile_nav.close' | t }}</span>
+                </summary>
                 <ul class="menu py-4 dropdown-content z-30 bg-base-content text-base-100 shadow-md rounded-box w-64">
                     <li class="menu-title text-neutral">{{ 'components.mobile_nav.block_1.heading' | t }}</li>
                     <li class="m-0 p-0">

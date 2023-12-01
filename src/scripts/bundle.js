@@ -79,7 +79,9 @@ document.querySelectorAll('.current-datetime').forEach(
 );
 
 // Set current year.
-document.querySelector('.current-year').textContent = new Date().getFullYear();
+document.querySelectorAll('.current-year').forEach(
+    el => el.textContent = new Date().getFullYear()
+);
 
 // Remove 'open' attribute from details when clicked to section.
 document.querySelector('section').addEventListener('click', () => {
