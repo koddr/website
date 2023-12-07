@@ -11,7 +11,7 @@
         },
         "partnership_banner": {
             "heading": "Want to hire me?",
-            "content_1": "To reduce processing time, please write me a message to Telegram or Email.",
+            "content_1": "To reduce processing time, please write me a message.",
             "content_2": "In the message be sure to include: name & general description of the project, technical specification, link to CJM (if user interaction is required) and desired deadlines.",
             "content_3": "I work in the UTC+03:00 time zone. Your messages will be considered on working days, from 11:00 to 18:00.",
             "button_1": "Write to Telegram",
@@ -186,15 +186,15 @@
                     "email_subject": "Collaborate"
                 },
                 "block_5": {
-                    "content": "A next-generation CLI tool for build amazing web apps.",
+                    "content": "A next-generation CLI tool for build amazing web apps",
                     "view_gowebly": "View Gowebly website"
                 },
                 "block_6": {
-                    "content": "A smart self-hosted tool for sharing secrets to your friends.",
+                    "content": "A smart self-hosted tool for sharing secrets to your friends",
                     "view_secretium": "View Secretium website"
                 },
                 "block_7": {
-                    "content": "A ready-made Go project with frontend & deploy automation.",
+                    "content": "A ready-made Go project with frontend & deploy automation",
                     "view_cgapp": "View Create Go App repository"
                 }
             },
