@@ -23,7 +23,7 @@
     <h2>{{ 'pages.index.right_column.block_2.heading' | t }}</h2>
     <p>{{ 'pages.index.right_column.block_2.content' | t | safe }}</p>
     <p>
-        <a class="btn rounded-box" href="/{% if page.lang == 'en' %}ru/{% endif %}">
+        <a class="btn rounded-box" href="{% i18n_link page.url, page.lang %}">
             {% include "icons/language.njk" %}
             {{ 'pages.index.right_column.block_2.button' | t }}
         </a>

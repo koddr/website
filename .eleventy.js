@@ -73,6 +73,12 @@ module.exports = (eleventyConfig) => {
     keySeparator: '.'
   });
 
+  // Add shortcode to create i18n link.
+  eleventyConfig.addShortcode('i18n_link', (path, lang) => {
+    // Check if path has a prefix.
+    return (lang === 'ru' && path.startsWith('/ru/')) ? path.substring(3) : `/ru${path}`;
+  });
+
   return {
     dir: {
       input: 'src',
