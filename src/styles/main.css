@@ -30,4 +30,12 @@
     div.swoosh {
         @apply flex flex-col sm:flex-row justify-center items-center my-8;
     }
+
+    pre.mermaid {
+        @apply w-full bg-transparent font-sans;
+    }
+
+    pre.mermaid span.nodeLabel {
+        @apply text-sm;
+    }
 }

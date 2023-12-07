@@ -59,6 +59,7 @@
         }
     },
     "modals": {
+        "close": "Close",
         "my_skills": {
             "block_1": {
                 "heading": "My skills",
@@ -127,6 +128,23 @@
                 "content_1": "I provide free support (within the original technical specification or CJM) for all realized projects within 14 working days after they are transferred to the customer.",
                 "content_2": "A longer period is agreed upon after the expiration of the free support period on an individual basis."
             }
+        },
+        "timeweb_cloud": {
+            "heading": "What is Timeweb Cloud?",
+            "content_1": "Timeweb Cloud is a cloud infrastructure for business and development with 15 years of experience and more than 165 thousand customers.",
+            "content_2": "Key advantages:",
+            "list": {
+                "item_1": "The infrastructure is deployed in fault-tolerant TIER III level data centers in Russia and Europe.",
+                "item_2": "The data centers have a fault tolerance rate of at least 99.99% and are PCI DSS, ISO and 152-ФЗ certified.",
+                "item_3": "There are all the required cloud technologies to work with (databases, S3 storage, Kubernetes, CI/CD and so on).",
+                "item_4": "Round-the-clock monitoring of service availability and instant response to emerging problems.",
+                "item_5": "Support 24/7 within 1 minute on the phone and in 15 minutes in a ticket."
+            },
+            "from_author": {
+                "name": "Vic Shóstak",
+                "content": "From myself personally, I can highlight such advantages of Timeweb Cloud as affordable prices and maximum customer focus."
+            },
+            "button": "Go to Timeweb Cloud website"
         }
     },
     "pages": {
@@ -199,6 +217,86 @@
                 }
             }
         },
+        "microservices": {
+            "heading": "Microservices",
+            "sub_heading": "for your business",
+            "block_1": {
+                "heading": "What am I offering?",
+                "content_1": "I offer full-service collaboration to build scalable, maintainable and fault-tolerant microservices for your business in Go or Python.",
+                "content_2": "Microservices are atomic units, they are independent of your development team's chosen technology stack used in other parts of your business process.",
+                "content_3": "Inter Program Communication (IPC) will utilize gRPC or REST (in JSON format), making it much easier to integrate the new service into your current infrastructure."
+            },
+            "block_2": {
+                "heading_1": "Scalability and flexibility",
+                "content_1": "Microservices offer a unique opportunity to start small and scale as you grow. Each service can be deployed independently, allowing you to increase resources for the most stressed parts of the system without affecting the rest.",
+                "heading_2": "Accelerating the development process",
+                "content_2": "Microservices can be developed and deployed autonomously, speeding up the process of making changes and updates. This makes them an ideal solution for any business that needs to constantly update their systems without downtime.",
+                "heading_3": "Uninterrupted work",
+                "content_3": "Microservice architecture increases the resilience of the system to failures: if one service fails, it does not affect the operation of the rest and vice versa."
+            },
+            "block_3": {
+                "heading": "Examples of tasks",
+                "content": "A list of some of my previously realized tasks, where the application of microservice architecture allowed to improve the customer's business metrics.",
+                "flowchart": {
+                    "action": "Action",
+                    "client": "Client",
+                    "microservice": "Microservice",
+                    "api": "External API",
+                    "db": "Database",
+                    "payment": "Payment terminal",
+                    "crm": "CRM system",
+                    "bi": "BI analytics",
+                    "report": "Report"
+                },
+                "card_1": {
+                    "heading": "Processing incoming requests (API gateway)",
+                    "content": "A service that integrates with various external/internal company systems, processes customer requests and returns the result in a set format."
+                },
+                "card_2": {
+                    "heading": "Recommendation and notification system",
+                    "content": "A system that sends personalized recommendations and event notifications to customers based on accumulated company data and other internal sales department metrics."
+                },
+                "card_3": {
+                    "heading": "System for collecting statistics and analytics",
+                    "content": "A system for collecting data on user interactions (on a website or mobile app) and analyzing them to produce business insights."
+                }
+            },
+            "block_4": {
+                "heading": "Cost of the service",
+                "content_1": "A microservice solution is always unique to each business.",
+                "content_2": "The table below shows approximate terms of realization and minimum budget calculation from which you can start. I will be able to give more precise data after familiarizing with the technical specification or CJM.",
+                "table": {
+                    "heading_1": "Name of the service",
+                    "heading_2": "Realization period",
+                    "heading_3": "Cost",
+                    "time_from": "from",
+                    "work_days": "working&nbsp;days",
+                    "row_1": {
+                        "column_1": "Single microservice function according to your requirements to solve tasks in your current infrastructure"
+                    },
+                    "row_2": {
+                        "column_1": "Full cycle planning and development of a microservice backend system based on your requirements from zero"
+                    }
+                }
+            },
+            "block_5": {
+                "heading": "What else is included?",
+                "content": "In addition to the development of a microservice solution, the cost of the service always includes the following work:",
+                "list": {
+                    "item_1": "Preparing a test stand for cooperative realization testing.",
+                    "item_2": "Preparing Docker containers for deployment to your infrastructure.",
+                    "item_3": "Comprehensive instruction guide (in Markdown or PDF format).",
+                    "item_4": "Consultation and support within 14 calendar days (within the original technical specification or CJM).",
+                    "item_5": "Sending a package of closing documents to the accounting department."
+                }
+            },
+            "block_6": {
+                "heading": "No in-house infrastructure?",
+                "content_1": "Nothing to worry about! I'm an official partner of one of the largest cloud service providers in Russia",
+                "content_2": "I will be glad to help you with selection of optimal configuration and commissioning of microservice solutions.",
+                "button": "Read more"
+            }
+        },
         "service_provision": {
             "heading": "Information",
             "sub_heading": "on service provision",
@@ -221,7 +319,8 @@
                 "table": {
                     "column_name_1": "#",
                     "column_name_2": "Name",
-                    "column_name_3": "PDF link"
+                    "column_name_3": "Last update",
+                    "column_name_4": "PDF link"
                 },
                 "pdf_oferta": "Public offer",
                 "pdf_politics": "Privacy policy and personal data processing",

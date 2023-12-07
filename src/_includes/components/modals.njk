@@ -2,7 +2,7 @@
 <dialog id="modal_my_skills" class="modal modal-bottom sm:modal-middle text-sm">
     <div class="modal-box sm:w-11/12 sm:max-w-xl">
         <form method="dialog" class="sticky top-0 z-20">
-            <button class="btn btn-sm btn-circle btn-ghost bg-base-100 absolute right-2 top-2">✕</button>
+            <button class="btn btn-sm btn-circle btn-ghost bg-base-100 absolute right-2 top-2" title="{{ 'modals.close' | t }}">✕</button>
         </form>
         <h2>{{ 'modals.my_skills.block_1.heading' | t }}</h2>
         <p>{{ 'modals.my_skills.block_1.content' | t }}</p>
@@ -80,7 +80,7 @@
 <dialog id="modal_work_philosophy" class="modal modal-bottom sm:modal-middle text-sm">
     <div class="modal-box sm:w-11/12 sm:max-w-xl">
         <form method="dialog" class="sticky top-0 z-20">
-            <button class="btn btn-sm btn-circle btn-ghost bg-base-100 absolute right-2 top-2">✕</button>
+            <button class="btn btn-sm btn-circle btn-ghost bg-base-100 absolute right-2 top-2" title="{{ 'modals.close' | t }}">✕</button>
         </form>
         <h2>{{ 'modals.work_philosophy.block_1.heading' | t }}</h2>
         <p>{{ 'modals.work_philosophy.block_1.content_1' | t }}</p>
@@ -176,14 +176,48 @@
                 <div class="timeline-middle">{% include "icons/check-mark.njk" %}</div>
             </li>
         </ul>
-        <div class="text-xs text-right">
+        <p class="text-xs text-right">
             {{ 'modals.work_philosophy.block_2.scroll_to_right' | t | safe }}&nbsp;&rarr;
-        </div>
+        </p>
         <h3>{{ 'modals.work_philosophy.block_3.heading' | t }}</h3>
         <p>{{ 'modals.work_philosophy.block_3.content_1' | t }}</p>
         <p>{{ 'modals.work_philosophy.block_3.content_2' | t }}</p>
         <div class="mt-8">
             {% include "components/partnership-banner.njk" %}
         </div>
+    </div>
+</dialog>
+
+{# Modal: About Timeweb Cloud #}
+<dialog id="modal_timeweb_cloud" class="modal modal-bottom sm:modal-middle text-sm">
+    <div class="modal-box sm:w-11/12 sm:max-w-xl">
+        <form method="dialog" class="sticky top-0 z-20">
+            <button class="btn btn-sm btn-circle btn-ghost bg-base-100 absolute right-2 top-2" title="{{ 'modals.close' | t }}">✕</button>
+        </form>
+        <h2>{{ 'modals.timeweb_cloud.heading' | t }}</h2>
+        <p>{{ 'modals.timeweb_cloud.content_1' | t | safe }}</p>
+        <p>{{ 'modals.timeweb_cloud.content_2' | t }}</p>
+        <ul>
+            <li>{{ 'modals.timeweb_cloud.list.item_1' | t }}</li>
+            <li>{{ 'modals.timeweb_cloud.list.item_2' | t }}</li>
+            <li>{{ 'modals.timeweb_cloud.list.item_3' | t }}</li>
+            <li>{{ 'modals.timeweb_cloud.list.item_4' | t }}</li>
+            <li>{{ 'modals.timeweb_cloud.list.item_5' | t }}</li>
+        </ul>
+        <div class="chat chat-start w-full mt-4 mb-8">
+            <div class="chat-image avatar w-10 h-10">
+                <img class="rounded-full" src="/avatar.jpg" alt="Vic Shóstak avatar"/>
+            </div>
+            <div class="chat-header">
+                {{ 'modals.timeweb_cloud.from_author.name' | t }}
+                <time class="text-xs opacity-50 current-datetime"></time>
+            </div>
+            <div class="chat-bubble bg-base-content text-base-100">{{ 'modals.timeweb_cloud.from_author.content' | t }}</div>
+        </div>
+        <p>
+            <a class="btn btn-block rounded-box" href="{{ templateData.ref_links.timeweb_cloud }}" target="_blank">
+                {{ 'modals.timeweb_cloud.button' | t }}
+            </a>
+        </p>
     </div>
 </dialog>

@@ -28,7 +28,7 @@ module.exports = (eleventyConfig) => {
       bundle: true,
       outfile: './src/scripts/minified/bundle.min.js',
       sourcemap: false,
-      target: ['chrome58', 'firefox57', 'safari11', 'edge16'],
+      target: ['chrome61', 'edge16', 'firefox60', 'safari11', 'es2019'],
       minify: true,
     });
   });

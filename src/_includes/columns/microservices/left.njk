@@ -1,0 +1,155 @@
+<div class="flex flex-col sm:flex-row gap-8 items-center p-4">
+    <a class="hidden xl:block p-5 border-2 border-accent rounded-3xl tooltip tooltip-bottom tooltip-primary" data-tip="{{ 'components.back_to_home' | t }}" href="/{% if page.lang == 'ru' %}ru/{% endif %}">
+        {% include "icons/arrow-left.njk" %}
+    </a>
+    <h1 class="text-base-content m-0">
+        <span class="sm:text-7xl">{{ 'pages.microservices.heading' | t }}</span><br/>{{ 'pages.microservices.sub_heading' | t }}
+    </h1>
+</div>
+<div class="grid xl:grid-cols-2 gap-8">
+    <div class="py-4 px-8 border-2 border-base-content rounded-3xl">
+        <h2>{{ 'pages.microservices.block_1.heading' | t }}</h2>
+        <p>{{ 'pages.microservices.block_1.content_1' | t }}</p>
+        <p>{{ 'pages.microservices.block_1.content_2' | t }}</p>
+        <p>{{ 'pages.microservices.block_1.content_3' | t }}</p>
+    </div>
+    <div class="py-4 px-8 border-2 border-accent rounded-3xl text-sm">
+        <h3>{{ 'pages.microservices.block_2.heading_1' | t }}</h3>
+        <p>{{ 'pages.microservices.block_2.content_1' | t }}</p>
+        <h3>{{ 'pages.microservices.block_2.heading_2' | t }}</h3>
+        <p>{{ 'pages.microservices.block_2.content_2' | t }}</p>
+        <h3>{{ 'pages.microservices.block_2.heading_3' | t }}</h3>
+        <p>{{ 'pages.microservices.block_2.content_3' | t }}</p>
+    </div>
+</div>
+<div class="grid xl:grid-cols-3 gap-8">
+    <div class="xl:col-span-1 py-4 px-8 border-2 border-primary rounded-3xl h-fit">
+        <h2>{{ 'pages.microservices.block_3.heading' | t }}</h2>
+        <p>{{ 'pages.microservices.block_3.content' | t }}</p>
+    </div>
+    <div class="xl:col-span-2 join join-vertical rounded-3xl">
+        <div class="collapse collapse-plus join-item border-2 border-b border-primary bg-primary/20 py-4 px-8">
+            <input type="radio" name="microservices_accordion"/>
+            <div class="collapse-title text-lg font-medium">{{ 'pages.microservices.block_3.card_1.heading' | t }}</div>
+            <div class="collapse-content">
+                <p>{{ 'pages.microservices.block_3.card_1.content' | t }}</p>
+                <pre class="mermaid hidden sm:block">
+                    flowchart LR
+                        C(["{{ 'pages.microservices.block_3.flowchart.client' | t }}"])
+                        M(["{{ 'pages.microservices.block_3.flowchart.microservice' | t }}"])
+                        API(["{{ 'pages.microservices.block_3.flowchart.api' | t }}"])
+                        DB(["{{ 'pages.microservices.block_3.flowchart.db' | t }}"])
+                        PS(["{{ 'pages.microservices.block_3.flowchart.payment' | t }}"])
+                        CRM(["{{ 'pages.microservices.block_3.flowchart.crm' | t }}"])
+                        BI(["{{ 'pages.microservices.block_3.flowchart.bi' | t }}"])
+                        C <--> M
+                        M <-..-> API & DB & PS & CRM & BI
+                </pre>
+            </div>
+        </div>
+        <div class="collapse collapse-plus join-item border-2 border-b border-primary bg-primary/20 py-4 px-8">
+            <input type="radio" name="microservices_accordion"/>
+            <div class="collapse-title text-lg font-medium">{{ 'pages.microservices.block_3.card_2.heading' | t }}</div>
+            <div class="collapse-content">
+                <p>{{ 'pages.microservices.block_3.card_2.content' | t }}</p>
+                <pre class="mermaid hidden sm:block">
+                    flowchart LR
+                        A(["{{ 'pages.microservices.block_3.flowchart.action' | t }}"])
+                        M1(["{{ 'pages.microservices.block_3.flowchart.microservice' | t }} 1"])
+                        M2(["{{ 'pages.microservices.block_3.flowchart.microservice' | t }} 2"])
+                        DB(["{{ 'pages.microservices.block_3.flowchart.db' | t }}"])
+                        CRM(["{{ 'pages.microservices.block_3.flowchart.crm' | t }}"])
+                        C(["{{ 'pages.microservices.block_3.flowchart.client' | t }}"])
+                        A --> M1
+                        M1 -.-> DB & CRM
+                        DB & CRM -.-> M2
+                        M2 --> C
+                </pre>
+            </div>
+        </div>
+        <div class="collapse collapse-plus join-item border-2 border-primary bg-primary/20 py-4 px-8">
+            <input type="radio" name="microservices_accordion"/>
+            <div class="collapse-title text-lg font-medium">{{ 'pages.microservices.block_3.card_3.heading' | t }}</div>
+            <div class="collapse-content">
+                <p>{{ 'pages.microservices.block_3.card_3.content' | t }}</p>
+                <pre class="mermaid hidden sm:block">
+                    flowchart LR
+                        C(["{{ 'pages.microservices.block_3.flowchart.client' | t }}"])
+                        M1(["{{ 'pages.microservices.block_3.flowchart.microservice' | t }} 1"])
+                        M2(["{{ 'pages.microservices.block_3.flowchart.microservice' | t }} 2"])
+                        DB(["{{ 'pages.microservices.block_3.flowchart.db' | t }}"])
+                        BI(["{{ 'pages.microservices.block_3.flowchart.bi' | t }}"])
+                        R(["{{ 'pages.microservices.block_3.flowchart.report' | t }}"])
+                        C --> M1
+                        M1 -.-> DB & BI
+                        DB & BI -.-> M2
+                        M2 --> R
+                </pre>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="grid xl:grid-cols-3 gap-8">
+    <div class="xl:col-span-2 py-4 px-8 border-2 border-base-content rounded-3xl overflow-x-auto">
+        <h2>{{ 'pages.microservices.block_4.heading' | t }}</h2>
+        <p>{{ 'pages.microservices.block_4.content_1' | t }}</p>
+        <p>{{ 'pages.microservices.block_4.content_2' | t }}</p>
+        <div class="overflow-x-auto">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>{{ 'pages.microservices.block_4.table.heading_1' | t }}</th>
+                        <th>{{ 'pages.microservices.block_4.table.heading_2' | t }}</th>
+                        <th class="text-right">{{ 'pages.microservices.block_4.table.heading_3' | t }}</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>{{ 'pages.microservices.block_4.table.row_1.column_1' | t }}</td>
+                        <td>{{ 'pages.microservices.block_4.table.time_from' | t }}&nbsp;14&nbsp;{{ 'pages.microservices.block_4.table.work_days' | t | safe }}</td>
+                        <td class="text-right">{{ 'pages.microservices.block_4.table.time_from' | t }}&nbsp;75&nbsp;000&nbsp;₽</td>
+                    </tr>
+                    <tr>
+                        <td>{{ 'pages.microservices.block_4.table.row_2.column_1' | t }}</td>
+                        <td>{{ 'pages.microservices.block_4.table.time_from' | t }}&nbsp;56&nbsp;{{ 'pages.microservices.block_4.table.work_days' | t | safe }}</td>
+                        <td class="text-right">{{ 'pages.microservices.block_4.table.time_from' | t }}&nbsp;295&nbsp;000&nbsp;₽</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div class="xl:col-span-1 py-4 px-8 border-2 border-accent rounded-3xl text-sm self-center h-fit">
+        <h3>{{ 'pages.microservices.block_5.heading' | t }}</h3>
+        <p>{{ 'pages.microservices.block_5.content' | t }}</p>
+        <ul>
+            <li>{{ 'pages.microservices.block_5.list.item_1' | t }}</li>
+            <li>{{ 'pages.microservices.block_5.list.item_2' | t }}</li>
+            <li>{{ 'pages.microservices.block_5.list.item_3' | t }}</li>
+            <li>{{ 'pages.microservices.block_5.list.item_4' | t }}</li>
+            <li>{{ 'pages.microservices.block_5.list.item_5' | t }}</li>
+        </ul>
+    </div>
+</div>
+<div class="grid xl:grid-cols-2 gap-8">
+    <div class="py-4 px-8 border-2 border-info rounded-3xl h-fit self-center">
+        <h2>{{ 'pages.microservices.block_6.heading' | t }}</h2>
+        <p>
+            {{ 'pages.microservices.block_6.content_1' | t }}&nbsp;&mdash;
+            <a href="{{ templateData.ref_links.timeweb_cloud }}" target="_blank">Timeweb Cloud</a>. {{ 'pages.microservices.block_6.content_2' | t }}
+        </p>
+        <p>
+            <button class="btn rounded-box" onclick="modal_timeweb_cloud.showModal()">
+                {{ 'pages.microservices.block_6.button' | t }}
+                {% include "icons/arrow-right.njk" %}
+            </button>
+        </p>
+    </div>
+    <div class="text-sm">
+        {% include "components/partnership-banner.njk" %}
+    </div>
+</div>
+
+{# Load mermaid for this page #}
+<script type="module">
+    import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
+</script>

@@ -1,18 +1,16 @@
-<div class="py-2 px-8 border-2 border-secondary rounded-3xl">
+<div class="py-2 sm:py-4 px-8 border-2 border-secondary rounded-3xl">
     <h3>{{ 'components.partnership_banner.heading'| t }}</h3>
     <p>{{ 'components.partnership_banner.content_1'| t }}</p>
     <p>{{ 'components.partnership_banner.content_2'| t }}</p>
-    <p>{{ 'components.partnership_banner.content_3'| t }}</p>
-    <p>
-        <a class="btn btn-block" href="{{ envData.telegram }}" target="_blank">
+    <div class="grid sm:grid-cols-2 gap-2 sm:gap-4">
+        <a class="btn btn-block rounded-box" href="{{ envData.telegram }}" target="_blank">
             {{ 'components.partnership_banner.button_1'| t }}
         </a>
-    </p>
-    <p>
         <a
-            class="btn btn-block"
+            class="btn btn-block rounded-box"
             href="mailto:{{ envData.email }}?subject={{ 'components.partnership_banner.email_subject'| t }}">
             {{ 'components.partnership_banner.button_2'| t }}
         </a>
-    </p>
+    </div>
+    <p class="text-center text-xs italic">{{ 'components.partnership_banner.content_3'| t }}</p>
 </div>
