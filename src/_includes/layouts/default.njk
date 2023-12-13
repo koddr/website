@@ -12,13 +12,19 @@ csp: "default-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googlea
     <meta charset="utf-8"/>
     <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="x-dns-prefetch-control" content="on"/>
     <meta http-equiv="Content-Security-Policy" content="{{ csp }}"/>
     <meta name="keywords" content="{{ keywords }}"/>
     <meta name="description" content="{{ description }}"/>
     <meta name="theme-color" content="#FEE04A"/>
     <title>{{ title }} | shostak.dev</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com"/>
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+    <link rel="dns-prefetch" href="//fonts.googleapis.com"/>
+    <link rel="dns-prefetch" href="//fonts.gstatic.com"/>
+    <link rel="dns-prefetch" href="//cdn.tailwindcss.com"/>
+    <link rel="dns-prefetch" href="//cdn.jsdelivr.net"/>
+    <link rel="preconnect" href="//fonts.googleapis.com" crossorigin/>
+    <link rel="preconnect" href="//fonts.gstatic.com" crossorigin/>
+    <link rel="preload" href="/avatar.jpg" as="image"/>
     <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet"/>
     <link rel="alternate" hreflang="{{ page.lang }}" href="https://shostak.dev{{ page.url }}"/>
     {% for link in page.url | locale_links %}

@@ -12,9 +12,9 @@
         </p>
         <p>{{ 'modals.my_skills.block_2.used_frameworks' | t }}</p>
         <ul>
-            <li>Fiber, HttpRouter, net/http;</li>
-            <li>pgx, sqlx, log/slog, koanf, google/wire, stretchr/testify;</li>
-            <li>Templ, Сharm (bubbletea, lipgloss);</li>
+            <li>Fiber, HttpRouter, Chi, net/http;</li>
+            <li>pgx, sqlx, log/slog, google/wire, stretchr/testify;</li>
+            <li>Templ, Сharm (bubbletea, lipgloss), koanf;</li>
         </ul>
         <p>
             <strong>Python</strong>&nbsp;&mdash; {{ 'modals.my_skills.block_2.python_content' | t }}
@@ -22,7 +22,7 @@
         <p>{{ 'modals.my_skills.block_2.used_frameworks' | t }}</p>
         <ul>
             <li>FastAPI;</li>
-            <li>Pydantic, Poetry, Black;</li>
+            <li>Poetry, Black;</li>
         </ul>
         <p>
             <strong>n8n</strong>&nbsp;&mdash; {{ 'modals.my_skills.block_2.n8n_content' | t }}
@@ -39,7 +39,7 @@
         </p>
         <h3>{{ 'modals.my_skills.block_4.heading' | t }}</h3>
         <p>
-            <strong>Vue.js</strong>&nbsp;&mdash; {{ 'modals.my_skills.block_4.vue_content' | t }}
+            <strong>Nuxt, Vue.js</strong>&nbsp;&mdash; {{ 'modals.my_skills.block_4.vue_content' | t }}
         </p>
         <p>
             <strong>Tailwind CSS</strong>&nbsp;&mdash; {{ 'modals.my_skills.block_4.tailwind_content' | t }}
@@ -60,9 +60,15 @@
         <p>
             <strong>Figma</strong>&nbsp;&mdash; {{ 'modals.my_skills.block_5.figma_content' | t }}
         </p>
+        <p>
+            <strong>FigJam</strong>&nbsp;&mdash; {{ 'modals.my_skills.block_5.figjam_content' | t }}
+        </p>
         <h3>{{ 'modals.my_skills.block_6.heading' | t }}</h3>
         <p>
             <strong>Docker</strong>&nbsp;&mdash; {{ 'modals.my_skills.block_6.docker_content' | t }}
+        </p>
+        <p>
+            <strong>Nginx/Angie, Traefik</strong>&nbsp;&mdash; {{ 'modals.my_skills.block_6.proxy_content' | t }}
         </p>
         <p>
             <strong>GitHub Actions, Gitlab Runners</strong>&nbsp;&mdash; {{ 'modals.my_skills.block_6.actions_runners_content' | t }}
@@ -182,6 +188,9 @@
         <h3>{{ 'modals.work_philosophy.block_3.heading' | t }}</h3>
         <p>{{ 'modals.work_philosophy.block_3.content_1' | t }}</p>
         <p>{{ 'modals.work_philosophy.block_3.content_2' | t }}</p>
+        <h3>{{ 'modals.work_philosophy.block_4.heading' | t }}</h3>
+        <p>{{ 'modals.work_philosophy.block_4.content_1' | t }}</p>
+        <p>{{ 'modals.work_philosophy.block_4.content_2' | t }}</p>
         <div class="mt-8">
             {% include "components/partnership-banner.njk" %}
         </div>
@@ -217,6 +226,52 @@
         <p>
             <a class="btn btn-block rounded-box" href="{{ templateData.ref_links.timeweb_cloud }}" target="_blank">
                 {{ 'modals.timeweb_cloud.button' | t }}
+            </a>
+        </p>
+    </div>
+</dialog>
+
+{# Modal: About Craftum & MyReviews #}
+<dialog id="modal_craftum_myreviews" class="modal modal-bottom sm:modal-middle text-sm">
+    <div class="modal-box sm:w-11/12 sm:max-w-xl">
+        <form method="dialog" class="sticky top-0 z-20">
+            <button class="btn btn-sm btn-circle btn-ghost bg-base-100 absolute right-2 top-2" title="{{ 'modals.close' | t }}">✕</button>
+        </form>
+        <h2>{{ 'modals.craftum_myreviews.heading' | t }}</h2>
+        <p>{{ 'modals.craftum_myreviews.content_1' | t | safe }}</p>
+        <p>{{ 'modals.craftum_myreviews.content_2' | t }}</p>
+        <ul>
+            <li>{{ 'modals.craftum_myreviews.list_1.item_1' | t }}</li>
+            <li>{{ 'modals.craftum_myreviews.list_1.item_2' | t }}</li>
+            <li>{{ 'modals.craftum_myreviews.list_1.item_3' | t }}</li>
+            <li>{{ 'modals.craftum_myreviews.list_1.item_4' | t }}</li>
+            <li>{{ 'modals.craftum_myreviews.list_1.item_5' | t }}</li>
+        </ul>
+        <p>{{ 'modals.craftum_myreviews.content_3' | t | safe }}</p>
+        <p>{{ 'modals.craftum_myreviews.content_4' | t }}</p>
+        <ul>
+            <li>{{ 'modals.craftum_myreviews.list_2.item_1' | t }}</li>
+            <li>{{ 'modals.craftum_myreviews.list_2.item_2' | t }}</li>
+            <li>{{ 'modals.craftum_myreviews.list_2.item_3' | t }}</li>
+        </ul>
+        <div class="chat chat-start w-full mt-4 mb-8">
+            <div class="chat-image avatar w-10 h-10">
+                <img class="rounded-full" src="/avatar.jpg" alt="Vic Shóstak avatar"/>
+            </div>
+            <div class="chat-header">
+                {{ 'modals.craftum_myreviews.from_author.name' | t }}
+                <time class="text-xs opacity-50 current-datetime"></time>
+            </div>
+            <div class="chat-bubble bg-base-content text-base-100">{{ 'modals.craftum_myreviews.from_author.content' | t }}</div>
+        </div>
+        <p>
+            <a class="btn btn-block rounded-box" href="{{ templateData.ref_links.craftum }}" target="_blank">
+                {{ 'modals.craftum_myreviews.button_1' | t }}
+            </a>
+        </p>
+        <p>
+            <a class="btn btn-block rounded-box" href="{{ templateData.ref_links.my_reviews }}" target="_blank">
+                {{ 'modals.craftum_myreviews.button_2' | t }}
             </a>
         </p>
     </div>

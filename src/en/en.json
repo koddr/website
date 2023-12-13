@@ -80,19 +80,21 @@
             },
             "block_4": {
                 "heading": "Frontend",
-                "vue_content": "my primary web framework. I'm a long-time fan of it (since version 2.x), so I implement all SPA projects in Vue ecosystem (Typescript).",
-                "tailwind_content": "my primary CSS framework for creating user interface. I often use it together with the daisyUI component library.",
+                "vue_content": "my primary web framework. I'm a long-time fan of it (since version 2.x), so I implement all SPA/MPA projects in Vue ecosystem (Typescript).",
+                "tailwind_content": "my primary CSS framework for creating user interface. I often use it together with the daisyUI component library and Nuxt UI.",
                 "htmx_content": "I always support such technologies and libraries because they allow every backend developer to become even more efficient and implement frontend logic without going outside the usual stack.",
                 "static_generators_content": "my main engines for creating static websites and public documentation.",
                 "bun_content": "I use this modern, incredibly fast and backwards-compatible Node.js JavaScript runtime.",
-                "vite_content": "my primary tool for dev environment, creating and optimizing builds of the frontend part of the project."
+                "vite_content": "my primary tool for creating and optimizing builds of the frontend part of the project."
             },
             "block_5": {
                 "heading": "UX/UI design",
-                "figma_content": "my primary tool for UX prototyping and creating UI design for websites and mobile apps."
+                "figma_content": "my primary tool for UX prototyping and creating UI design for websites and mobile apps.",
+                "figjam_content": "my primary tool for composing CJM for websites and mobile apps."
             },
             "block_6": {
-                "heading": "CI/CD and deploy tools",
+                "heading": "Proxy, CI/CD and deploy tools",
+                "proxy_content": "the main proxy/web servers that I work with.",
                 "docker_content": "I place all my Go/Python projects in Docker images for later deployment to a remote server or cloud infrastructure as isolated containers.",
                 "actions_runners_content": "to automate the process of deploying and code base verification/validation.",
                 "goreleaser_content": "to automate the process of building a Go project for different architectures and OS, as well as, publishing to Homebrew and Docker Hub."
@@ -127,6 +129,11 @@
                 "heading": "Support of the realized projects",
                 "content_1": "I provide free support (within the original technical specification or CJM) for all realized projects within 14 working days after they are transferred to the customer.",
                 "content_2": "A longer period is agreed upon after the expiration of the free support period on an individual basis."
+            },
+            "block_4": {
+                "heading": "Consulting",
+                "content_1": "I provide free consultation (as part of the original terms of reference or CJM) on all analytical UX reports created within 7 working days of delivery to the customer.",
+                "content_2": "A longer period is agreed upon after the free consultation period has expired on an individual basis."
             }
         },
         "timeweb_cloud": {
@@ -145,6 +152,31 @@
                 "content": "From myself personally, I can highlight such advantages of Timeweb Cloud as affordable prices and maximum customer focus."
             },
             "button": "Go to Timeweb Cloud website"
+        },
+        "craftum_myreviews": {
+            "heading": "What are Craftum & MyReviews?",
+            "content_1": "Craftum is an online website builder for creating websites of any complexity with more than 150 ready-made templates of premium quality.",
+            "content_2": "Key advantages:",
+            "list_1": {
+                "item_1": "Creating websites based on ready-made templates or your own design.",
+                "item_2": "Help you migrate your website from Wix, Tilda, Squarespace and Ecwid.",
+                "item_3": "Many ready integrations with other services (online chat, online payment acceptance systems, analytics, and so on).",
+                "item_4": "Built-in tools for SEO-promotion.",
+                "item_5": "Support 24/7."
+            },
+            "content_3": "MyReviews is a simple and powerful tool for handling reviews of your business or a specific service online.",
+            "content_4": "Key advantages:",
+            "list_2": {
+                "item_1": "Automatic collection of statistics from sites (Google Maps, Yandex.Maps, 2GIS and so on).",
+                "item_2": "Interception of negative reviews before they are published on the platforms.",
+                "item_3": "An online widget to collect reviews on your website."
+            },
+            "from_author": {
+                "name": "Vic Shóstak",
+                "content": "From myself personally, I can highlight such advantages of Craftum and MyReviews platforms as affordable prices and ease of use."
+            },
+            "button_1": "Go to Craftum website",
+            "button_2": "Go to MyReviews website"
         }
     },
     "pages": {
@@ -286,7 +318,7 @@
                     "item_1": "Preparing a test stand for cooperative realization testing.",
                     "item_2": "Preparing Docker containers for deployment to your infrastructure.",
                     "item_3": "Comprehensive instruction guide (in Markdown or PDF format).",
-                    "item_4": "Consultation and support within 14 working days (within the original technical specification or CJM).",
+                    "item_4": "Consultation and support during 14 working days (within the original technical specification or CJM).",
                     "item_5": "Sending a package of closing documents to the accounting department."
                 }
             },
@@ -294,6 +326,99 @@
                 "heading": "No in-house infrastructure?",
                 "content_1": "Nothing to worry about! I'm an official partner of one of the largest cloud service providers in Russia",
                 "content_2": "I will be glad to help you with selection of optimal configuration and commissioning of microservice solutions.",
+                "button": "Read more"
+            }
+        },
+        "ux_reviews": {
+            "heading": "UX reviews",
+            "sub_heading": "for your business",
+            "block_1": {
+                "heading": "What am I offering?",
+                "content_1": "I offer collaboration in the type of consulting to improve the quality of customer user experience (UX) with your product.",
+                "content_2": "UX review is a key process in ensuring that your product meets the needs of your target audience. Being an integral part of product development of any complexity, this assessment is a comprehensive analysis of user interaction with your product (landing page, online store, mobile app, and so on).",
+                "content_3": "In today's marketplace, where every product is fighting for the consumer's attention, a well-planned UX can be a critical success factor."
+            },
+            "block_2": {
+                "heading_1": "Product success in the market",
+                "content_1": "Investing in UX leads to higher levels of customer satisfaction, increased brand loyalty and business loyalty. Companies that regularly evaluate user interactions and optimize their products based on the findings provide a competitive advantage in the marketplace.",
+                "heading_2": "Increase conversion and sales growth",
+                "content_2": "UX optimization helps to better move users toward their goal, whether it's a purchase, registration, or other important action. An improved user experience can lead to increased conversions, higher sales and more revenue for a company.",
+                "heading_3": "Reduced cost of support",
+                "content_3": "A well-designed product UX reduces the number of errors and problems your customers encounter, leading to fewer support calls and, as a result, lower business costs."
+            },
+            "block_3": {
+                "heading": "UX review example",
+                "content": "A very brief example of a task I realized earlier, where a UX review increased the conversion rate for a targeted action on a customer's website.",
+                "tabs": {
+                    "tab_1": {
+                        "heading": "Issue",
+                        "content": "The registration page on the customer's web service shows a lower than expected conversion rate: only 10% of visitors to this section register, and only half of them confirm their account by clicking on the link from the transaction email. This action has an important role in the company's business processes, as the main functionality of the web service becomes available only after account confirmation."
+                    },
+                    "tab_2": {
+                        "heading": "Analytics",
+                        "content_1": "Since the registration page is an important part of the business process, the analytics took into account only those parameters that affect the increase in conversions. Namely:",
+                        "content_2": "The remaining parameters were specifically excluded from the analytics to reduce their impact on the final solution.",
+                        "list": {
+                            "item_1": "The location of the registration page relative to the home page;",
+                            "item_2": "Information on completing the form fields and its validation process;",
+                            "item_3": "Number of providers through which registration is possible;",
+                            "item_4": "Transactional email speed and mail server configuration;",
+                            "item_5": "Relevance of information in transactional writing."
+                        }
+                    },
+                    "tab_3": {
+                        "heading": "Solution",
+                        "content_1": "As a result of analytical actions, the following solutions were derived to increase the conversion rate of the registration page on the customer's web service:",
+                        "content_2": "The UI of the registration form should be worked out separately: it is necessary to correct its appearance and the sequence of fields so that the client could fill out this form as intuitively as possible.",
+                        "list": {
+                            "item_1": "Place the registration form on the main page of the web service (for example, in the starting block of content where the account login form is located), so that the customer does not have to go to a secondary page;",
+                            "item_2": "Add fill-in reference information for each field of the registration form (for example, in the form of tooltips when hovering over the question icon);",
+                            "item_3": "Add color and text indication for incorrectly entered data in the registration form (e.g., highlight the field in red immediately upon entry, not after it is sent to the server by the «Register» button);",
+                            "item_4": "Add additional providers for registration on the web service, in addition to the classic registration by email (e.g., using Yandex and VK account). Since the frontend part of the web service is written in React, you can use a ready-made library to solve this task;",
+                            "item_5": "Check the settings of the mail server (DKIM and SPF) that sends transactional emails, because very often they end up in the SPAM folder and the client cannot view them;",
+                            "item_6": "In the transactional email separately allocate a block of information about the benefits of account confirmation, make the link to account confirmation more prominent."
+                        }
+                    }
+                }
+            },
+            "block_4": {
+                "heading": "Cost of service",
+                "content_1": "UX reviews are always unique and depend on the business processes of a particular company.",
+                "content_2": "The table below shows approximate terms of realization and minimum budget calculation from which you can start. I will be able to give more precise data after familiarizing with the terms of reference or CJM.",
+                "table": {
+                    "heading_1": "Name of the service",
+                    "heading_2": "Realization period",
+                    "heading_3": "Cost",
+                    "time_from": "from",
+                    "work_days": "working&nbsp;days",
+                    "row_1": {
+                        "column_1": "Reviewing one scenario within your product"
+                    },
+                    "row_2": {
+                        "column_1": "Comprehensive landing page review (the entire cycle of user interaction)"
+                    },
+                    "row_3": {
+                        "column_1": "Comprehensive review of an online store or online trading platform (the entire cycle of user interaction)"
+                    },
+                    "row_4": {
+                        "column_1": "Comprehensive review of a mobile application for Android or iOS (the entire cycle of user interaction)"
+                    }
+                }
+            },
+            "block_5": {
+                "heading": "What else is included?",
+                "content": "The following work is always included in the cost of the service, in addition to analyzing and compiling the estimate:",
+                "list": {
+                    "item_1": "A detailed UX report with improvement forecast and technical recommendations for the development department (in Markdown or PDF format).",
+                    "item_2": "A variant of CJM based on the improvement forecast (in FigJam format).",
+                    "item_3": "Consultation during 7 working days (as part of the original terms of reference or CJM).",
+                    "item_4": "Sending a package of closing documents to the accounting department."
+                }
+            },
+            "block_6": {
+                "heading": "Just thinking of moving your business online?",
+                "content_1": "This is great! I am an official partner of a Russian platform for creating websites of any complexity",
+                "content_2": "I will gladly help you choose a template with optimal UX for your tasks, as well as customize the service to work with feedback",
                 "button": "Read more"
             }
         },

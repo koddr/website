@@ -1,0 +1,132 @@
+<div class="flex flex-col sm:flex-row gap-8 items-center p-4">
+    <a class="hidden xl:block p-5 border-2 border-accent rounded-3xl tooltip tooltip-bottom tooltip-primary" data-tip="{{ 'components.back_to_home' | t }}" href="/{% if page.lang == 'ru' %}ru/{% endif %}">
+        {% include "icons/arrow-left.njk" %}
+    </a>
+    <h1 class="text-base-content m-0">
+        <span class="sm:text-7xl">{{ 'pages.ux_reviews.heading' | t }}</span><br/>{{ 'pages.ux_reviews.sub_heading' | t }}
+    </h1>
+</div>
+<div class="grid xl:grid-cols-2 gap-8">
+    <div class="py-4 px-8 border-2 border-base-content rounded-3xl">
+        <h2>{{ 'pages.ux_reviews.block_1.heading' | t }}</h2>
+        <p>{{ 'pages.ux_reviews.block_1.content_1' | t }}</p>
+        <p>{{ 'pages.ux_reviews.block_1.content_2' | t | safe }}</p>
+        <p>{{ 'pages.ux_reviews.block_1.content_3' | t }}</p>
+    </div>
+    <div class="py-4 px-8 border-2 border-accent rounded-3xl text-sm">
+        <h3>{{ 'pages.ux_reviews.block_2.heading_1' | t }}</h3>
+        <p>{{ 'pages.ux_reviews.block_2.content_1' | t | safe }}</p>
+        <h3>{{ 'pages.ux_reviews.block_2.heading_2' | t }}</h3>
+        <p>{{ 'pages.ux_reviews.block_2.content_2' | t }}</p>
+        <h3>{{ 'pages.ux_reviews.block_2.heading_3' | t }}</h3>
+        <p>{{ 'pages.ux_reviews.block_2.content_3' | t }}</p>
+    </div>
+</div>
+<div class="grid xl:grid-cols-3 gap-8">
+    <div class="xl:col-span-1 py-4 px-8 border-2 border-primary rounded-3xl h-fit">
+        <h2>{{ 'pages.ux_reviews.block_3.heading' | t }}</h2>
+        <p>{{ 'pages.ux_reviews.block_3.content' | t }}</p>
+    </div>
+    <div class="xl:col-span-2 px-8 pt-8 pb-2 bg-primary/20 border-2 border-primary rounded-3xl overflow-x-auto">
+        <div role="tablist" class="tabs tabs-bordered">
+            <input type="radio" name="tab" role="tab" class="tab" aria-label="{{ 'pages.ux_reviews.block_3.tabs.tab_1.heading' | t }}" checked/>
+            <div role="tabpanel" class="tab-content py-8">
+                {{ 'pages.ux_reviews.block_3.tabs.tab_1.content' | t }}
+            </div>
+            <input type="radio" name="tab" role="tab" class="tab" aria-label="{{ 'pages.ux_reviews.block_3.tabs.tab_2.heading' | t }}"/>
+            <div role="tabpanel" class="tab-content py-8">
+                {{ 'pages.ux_reviews.block_3.tabs.tab_2.content_1' | t }}
+                <ul>
+                    <li>{{ 'pages.ux_reviews.block_3.tabs.tab_2.list.item_1' | t }}</li>
+                    <li>{{ 'pages.ux_reviews.block_3.tabs.tab_2.list.item_2' | t }}</li>
+                    <li>{{ 'pages.ux_reviews.block_3.tabs.tab_2.list.item_3' | t }}</li>
+                    <li>{{ 'pages.ux_reviews.block_3.tabs.tab_2.list.item_4' | t }}</li>
+                    <li>{{ 'pages.ux_reviews.block_3.tabs.tab_2.list.item_5' | t }}</li>
+                </ul>
+                {{ 'pages.ux_reviews.block_3.tabs.tab_2.content_2' | t }}
+            </div>
+            <input type="radio" name="tab" role="tab" class="tab" aria-label="{{ 'pages.ux_reviews.block_3.tabs.tab_3.heading' | t }}"/>
+            <div role="tabpanel" class="tab-content py-8">
+                {{ 'pages.ux_reviews.block_3.tabs.tab_3.content_1' | t }}
+                <ul>
+                    <li>{{ 'pages.ux_reviews.block_3.tabs.tab_3.list.item_1' | t }}</li>
+                    <li>{{ 'pages.ux_reviews.block_3.tabs.tab_3.list.item_2' | t }}</li>
+                    <li>{{ 'pages.ux_reviews.block_3.tabs.tab_3.list.item_3' | t }}</li>
+                    <li>{{ 'pages.ux_reviews.block_3.tabs.tab_3.list.item_4' | t }}</li>
+                    <li>{{ 'pages.ux_reviews.block_3.tabs.tab_3.list.item_5' | t }}</li>
+                    <li>{{ 'pages.ux_reviews.block_3.tabs.tab_3.list.item_6' | t }}</li>
+                </ul>
+                {{ 'pages.ux_reviews.block_3.tabs.tab_3.content_2' | t }}
+            </div>
+        </div>
+    </div>
+</div>
+<div class="grid xl:grid-cols-3 gap-8">
+    <div class="xl:col-span-2 py-4 px-8 border-2 border-base-content rounded-3xl overflow-x-auto">
+        <h2>{{ 'pages.ux_reviews.block_4.heading' | t }}</h2>
+        <p>{{ 'pages.ux_reviews.block_4.content_1' | t }}</p>
+        <p>{{ 'pages.ux_reviews.block_4.content_2' | t }}</p>
+        <div class="overflow-x-auto">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>{{ 'pages.ux_reviews.block_4.table.heading_1' | t }}</th>
+                        <th>{{ 'pages.ux_reviews.block_4.table.heading_2' | t }}</th>
+                        <th class="text-right">{{ 'pages.ux_reviews.block_4.table.heading_3' | t }}</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>{{ 'pages.ux_reviews.block_4.table.row_1.column_1' | t }}</td>
+                        <td>{{ 'pages.ux_reviews.block_4.table.time_from' | t }}&nbsp;4&nbsp;{{ 'pages.ux_reviews.block_4.table.work_days' | t | safe }}</td>
+                        <td class="text-right">{{ 'pages.ux_reviews.block_4.table.time_from' | t }}&nbsp;15&nbsp;000&nbsp;₽</td>
+                    </tr>
+                    <tr>
+                        <td>{{ 'pages.ux_reviews.block_4.table.row_2.column_1' | t }}</td>
+                        <td>{{ 'pages.ux_reviews.block_4.table.time_from' | t }}&nbsp;10&nbsp;{{ 'pages.ux_reviews.block_4.table.work_days' | t | safe }}</td>
+                        <td class="text-right">{{ 'pages.ux_reviews.block_4.table.time_from' | t }}&nbsp;35&nbsp;000&nbsp;₽</td>
+                    </tr>
+                    <tr>
+                        <td>{{ 'pages.ux_reviews.block_4.table.row_3.column_1' | t }}</td>
+                        <td>{{ 'pages.ux_reviews.block_4.table.time_from' | t }}&nbsp;16&nbsp;{{ 'pages.ux_reviews.block_4.table.work_days' | t | safe }}</td>
+                        <td class="text-right">{{ 'pages.ux_reviews.block_4.table.time_from' | t }}&nbsp;55&nbsp;000&nbsp;₽</td>
+                    </tr>
+                    <tr>
+                        <td>{{ 'pages.ux_reviews.block_4.table.row_4.column_1' | t }}</td>
+                        <td>{{ 'pages.ux_reviews.block_4.table.time_from' | t }}&nbsp;18&nbsp;{{ 'pages.ux_reviews.block_4.table.work_days' | t | safe }}</td>
+                        <td class="text-right">{{ 'pages.ux_reviews.block_4.table.time_from' | t }}&nbsp;75&nbsp;000&nbsp;₽</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div class="xl:col-span-1 py-4 px-8 bg-accent text-always-black rounded-3xl text-sm self-center h-fit">
+        <h3 class="text-always-black">{{ 'pages.ux_reviews.block_5.heading' | t }}</h3>
+        <p>{{ 'pages.ux_reviews.block_5.content' | t }}</p>
+        <ul>
+            <li>{{ 'pages.ux_reviews.block_5.list.item_1' | t }}</li>
+            <li>{{ 'pages.ux_reviews.block_5.list.item_2' | t }}</li>
+            <li>{{ 'pages.ux_reviews.block_5.list.item_3' | t }}</li>
+            <li>{{ 'pages.ux_reviews.block_5.list.item_4' | t }}</li>
+        </ul>
+    </div>
+</div>
+<div class="grid xl:grid-cols-2 gap-8">
+    <div class="py-4 px-8 border-2 border-info rounded-3xl h-fit self-center">
+        <h2>{{ 'pages.ux_reviews.block_6.heading' | t }}</h2>
+        <p>
+            {{ 'pages.ux_reviews.block_6.content_1' | t }}&nbsp;&mdash;
+            <a href="{{ templateData.ref_links.craftum }}" target="_blank">Craftum</a>. {{ 'pages.ux_reviews.block_6.content_2' | t }}
+            <a href="{{ templateData.ref_links.my_reviews }}" target="_blank">MyReviews</a>.
+        </p>
+        <p>
+            <button class="btn rounded-box" onclick="modal_craftum_myreviews.showModal()">
+                {{ 'pages.ux_reviews.block_6.button' | t }}
+                {% include "icons/arrow-right.njk" %}
+            </button>
+        </p>
+    </div>
+    <div class="text-sm self-center">
+        {% include "components/partnership-banner.njk" %}
+    </div>
+</div>

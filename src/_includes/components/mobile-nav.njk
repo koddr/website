@@ -2,7 +2,7 @@
         text-sm xl:hidden">
     <div class="grid grid-cols-3 gap-8">
         <div class="col-span-2 self-center">
-            <a class="font-bold text-neutral no-underline" href="/{% if locale == 'ru' %}ru/{% endif %}">
+            <a class="font-bold text-neutral no-underline" href="/{% if page.lang == 'ru' %}ru/{% endif %}">
                 {% if page.url == '/' or page.url == '/ru/' %}
                     {{ templateData.website_name | upper }}
                 {% else %}
@@ -19,12 +19,12 @@
                 <ul class="menu py-4 dropdown-content z-30 bg-base-content text-base-100 shadow-md rounded-box w-64">
                     <li class="menu-title text-neutral">{{ 'components.mobile_nav.block_1.heading' | t }}</li>
                     <li class="m-0 p-0">
-                        <a href="/{% if page.lang == 'en' %}ru/{% endif %}microservices">
+                        <a href="/{% if page.lang == 'ru' %}ru/{% endif %}microservices">
                             {{ 'components.mobile_nav.block_1.link_1' | t }}
                         </a>
                     </li>
                     <li class="m-0 p-0">
-                        <a href="/{% if page.lang == 'en' %}ru/{% endif %}ux-reviews">
+                        <a href="/{% if page.lang == 'ru' %}ru/{% endif %}ux-reviews">
                             {{ 'components.mobile_nav.block_1.link_2' | t }}
                         </a>
                     </li>
@@ -70,7 +70,7 @@
                         </a>
                     </li>
                     <li class="m-0 p-0">
-                        <a href="/{% if page.lang == 'en' %}ru/{% endif %}">
+                        <a href="{% i18n_link page.url, page.lang %}">
                             {{ 'components.mobile_nav.block_4.link_2' | t }}
                         </a>
                     </li>

@@ -5,6 +5,9 @@
   "background_color": "#FEE04A",
   "theme_color": "#FEE04A",
   "display": "standalone",
+  "display_override": [
+    "window-controls-overlay"
+  ],
   "orientation": "portrait",
   "start_url": ".",
   "icons": [
