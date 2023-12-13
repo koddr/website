@@ -231,35 +231,35 @@
     </div>
 </dialog>
 
-{# Modal: About Craftum & MyReviews #}
-<dialog id="modal_craftum_myreviews" class="modal modal-bottom sm:modal-middle text-sm">
+{# Modal: About Craftum #}
+<dialog id="modal_craftum" class="modal modal-bottom sm:modal-middle text-sm">
     <div class="modal-box sm:w-11/12 sm:max-w-xl">
         <form method="dialog" class="sticky top-0 z-20">
             <button class="btn btn-sm btn-circle btn-ghost bg-base-100 absolute right-2 top-2" title="{{ 'modals.close' | t }}">✕</button>
         </form>
-        <h2>{{ 'modals.craftum_myreviews.heading' | t }}</h2>
-        <p>{{ 'modals.craftum_myreviews.content_1' | t | safe }}</p>
-        <p>{{ 'modals.craftum_myreviews.content_2' | t }}</p>
+        <h2>{{ 'modals.craftum.heading' | t }}</h2>
+        <p>{{ 'modals.craftum.content_1' | t | safe }}</p>
+        <p>{{ 'modals.craftum.content_2' | t }}</p>
         <ul>
-            <li>{{ 'modals.craftum_myreviews.list_1.item_1' | t }}</li>
-            <li>{{ 'modals.craftum_myreviews.list_1.item_2' | t }}</li>
-            <li>{{ 'modals.craftum_myreviews.list_1.item_3' | t }}</li>
-            <li>{{ 'modals.craftum_myreviews.list_1.item_4' | t }}</li>
-            <li>{{ 'modals.craftum_myreviews.list_1.item_5' | t }}</li>
+            <li>{{ 'modals.craftum.list_1.item_1' | t }}</li>
+            <li>{{ 'modals.craftum.list_1.item_2' | t }}</li>
+            <li>{{ 'modals.craftum.list_1.item_3' | t }}</li>
+            <li>{{ 'modals.craftum.list_1.item_4' | t }}</li>
+            <li>{{ 'modals.craftum.list_1.item_5' | t }}</li>
         </ul>
         <div class="chat chat-start w-full mt-4 mb-8">
             <div class="chat-image avatar w-10 h-10">
                 <img class="rounded-full" src="/avatar.jpg" alt="Vic Shóstak avatar"/>
             </div>
             <div class="chat-header">
-                {{ 'modals.craftum_myreviews.from_author.name' | t }}
+                {{ 'modals.craftum.from_author.name' | t }}
                 <time class="text-xs opacity-50 current-datetime"></time>
             </div>
-            <div class="chat-bubble bg-base-content text-base-100">{{ 'modals.craftum_myreviews.from_author.content' | t }}</div>
+            <div class="chat-bubble bg-base-content text-base-100">{{ 'modals.craftum.from_author.content' | t }}</div>
         </div>
         <p>
             <a class="btn btn-block rounded-box" href="{{ templateData.ref_links.craftum }}" target="_blank">
-                {{ 'modals.craftum_myreviews.button' | t }}
+                {{ 'modals.craftum.button' | t }}
             </a>
         </p>
     </div>
