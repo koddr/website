@@ -154,7 +154,7 @@
             "button": "Go to Timeweb Cloud website"
         },
         "craftum_myreviews": {
-            "heading": "What are Craftum & MyReviews?",
+            "heading": "What are Craftum?",
             "content_1": "Craftum is an online website builder for creating websites of any complexity with more than 150 ready-made templates of premium quality.",
             "content_2": "Key advantages:",
             "list_1": {
@@ -164,19 +164,11 @@
                 "item_4": "Built-in tools for SEO-promotion.",
                 "item_5": "Support 24/7."
             },
-            "content_3": "MyReviews is a simple and powerful tool for handling reviews of your business or a specific service online.",
-            "content_4": "Key advantages:",
-            "list_2": {
-                "item_1": "Automatic collection of statistics from sites (Google Maps, Yandex.Maps, 2GIS and so on).",
-                "item_2": "Interception of negative reviews before they are published on the platforms.",
-                "item_3": "An online widget to collect reviews on your website."
-            },
             "from_author": {
                 "name": "Vic Shóstak",
-                "content": "From myself personally, I can highlight such advantages of Craftum and MyReviews platforms as affordable prices and ease of use."
+                "content": "From myself personally, I can highlight such advantages of Craftum platform as affordable prices and ease of use."
             },
-            "button_1": "Go to Craftum website",
-            "button_2": "Go to MyReviews website"
+            "button": "Go to Craftum website"
         }
     },
     "pages": {
@@ -416,9 +408,9 @@
                 }
             },
             "block_6": {
-                "heading": "Just thinking of moving your business online?",
+                "heading": "Thinking of moving your business online?",
                 "content_1": "This is great! I am an official partner of a Russian platform for creating websites of any complexity",
-                "content_2": "I will gladly help you choose a template with optimal UX for your tasks, as well as customize the service to work with feedback",
+                "content_2": "I will gladly help you choose a template with optimal UX for your tasks.",
                 "button": "Read more"
             }
         },
