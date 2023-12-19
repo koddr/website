@@ -439,11 +439,11 @@
                     "column_name_3": "Last update",
                     "column_name_4": "PDF link"
                 },
-                "pdf_oferta": "Public offer",
-                "pdf_politics": "Privacy policy and personal data processing",
-                "pdf_sample_contract_1": "Sample contract for the provision of outsourcing services in the area of IT on a fee-for-service basis",
-                "pdf_payment": "Payment details",
-                "button": "Download"
+                "pdf_1": "Public offer",
+                "pdf_2": "Privacy policy and personal data processing",
+                "pdf_3": "Sample contract for the provision of outsourcing services in the area of IT on a fee-for-service basis",
+                "pdf_4": "Payment details",
+                "button": "View"
             }
         }
     }
