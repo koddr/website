@@ -436,12 +436,13 @@
                 "table": {
                     "column_name_1": "#",
                     "column_name_2": "Name",
-                    "column_name_3": "Last update",
-                    "column_name_4": "PDF link"
+                    "column_name_3": "Language",
+                    "column_name_4": "Last update",
+                    "column_name_5": "PDF link"
                 },
-                "pdf_1": "Public offer",
-                "pdf_2": "Privacy policy and personal data processing",
-                "pdf_3": "Sample contract for the provision of outsourcing services in the area of IT on a fee-for-service basis",
+                "pdf_1": "Public offer to provide services",
+                "pdf_2": "Sample of Appendix No. 1 to the Public offer to provide services",
+                "pdf_3": "Sample of Agreement on Electronic Document Interchange (EDI) between the counterparties",
                 "pdf_4": "Payment details",
                 "button": "View"
             }
