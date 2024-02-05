@@ -78,22 +78,15 @@ if (getCookie("cc") === undefined) {
 }
 
 // Set datetime for phone mockup to current.
-document
-  .querySelectorAll(".current-datetime")
-  .forEach(
-    (el) =>
-      (el.textContent = new Date().toLocaleTimeString(navigator.language, {
-        hour: "2-digit",
-        minute: "2-digit",
-      }))
-  );
+document.querySelectorAll(".current-datetime").forEach(
+  (el) =>
+    (el.textContent = new Date().toLocaleTimeString(navigator.language, {
+      hour: "2-digit",
+      minute: "2-digit",
+    }))
+);
 
 // Set current year.
 document
   .querySelectorAll(".current-year")
   .forEach((el) => (el.textContent = new Date().getFullYear()));
-
-// Remove 'open' attribute from details when clicked to section.
-// document.querySelector('section').addEventListener('click', () => {
-//     document.querySelector('details.dropdown').removeAttribute('open');
-// });
