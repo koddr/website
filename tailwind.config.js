@@ -1,42 +1,42 @@
 module.exports = {
-  darkMode: 'class',
-  content: ['./src/**/*.{njk,svg}'],
+  darkMode: "class",
+  content: ["./src/**/*.{njk,svg}"],
   theme: {
     extend: {
       maxWidth: {
-        'screen-3xl': '1600px',
+        "screen-3xl": "1600px",
       },
       fontFamily: {
-        'sans': ['Inter var', 'ui-sans-serif', 'system-ui', '-apple-system', 'BlinkMacSystemFont', 'sans-serif']
+        sans: [
+          "Inter var",
+          ...require("tailwindcss/defaultTheme").fontFamily.sans,
+        ],
       },
       colors: {
         "always-black": "#323234",
         "always-white": "#E3DDCF",
-      }
+      },
     },
   },
-  plugins: [
-    require('@tailwindcss/typography'),
-    require('daisyui'),
-  ],
+  plugins: [require("@tailwindcss/typography"), require("daisyui")],
   daisyui: {
     themes: [
       {
         light: {
-          "primary": "#FEE04A",
-          "secondary": "#28AF60",
+          primary: "#FEE04A",
+          secondary: "#28AF60",
           "base-100": "#F6F4EF", // background color
           "base-content": "#323234", // text color
-          "accent": "#E3DDCF",
-          "neutral": "#B0AEA6",
+          accent: "#E3DDCF",
+          neutral: "#B0AEA6",
         },
         dark: {
-          "primary": "#FEE04A",
-          "secondary": "#28AF60",
+          primary: "#FEE04A",
+          secondary: "#28AF60",
           "base-100": "#323234", // background color
           "base-content": "#E3DDCF", // text color
-          "accent": "#B0AEA6",
-          "neutral": "#585859",
+          accent: "#B0AEA6",
+          neutral: "#585859",
         },
       },
     ],
@@ -47,6 +47,6 @@ module.exports = {
     utils: true,
     prefix: "",
     logs: false,
-    themeRoot: ":root"
-  }
+    themeRoot: ":root",
+  },
 };

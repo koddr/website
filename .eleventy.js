@@ -90,7 +90,5 @@ module.exports = (eleventyConfig) => {
       input: "src",
       output: "dist",
     },
-    htmlTemplateEngine: "njk",
-    markdownTemplateEngine: "njk",
   };
 };

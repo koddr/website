@@ -3,39 +3,39 @@
 @tailwind utilities;
 
 @layer base {
-    main {
-        @apply max-w-screen-3xl mx-auto antialiased prose prose-h2:mt-6 prose-h3:mt-6 prose-img:m-0 prose-a:decoration-2 prose-a:underline-offset-2 prose-a:decoration-secondary hover:prose-a:no-underline;
-    }
+  main {
+    @apply max-w-screen-3xl mx-auto antialiased prose prose-h2:mt-6 prose-h3:mt-6 prose-img:m-0 prose-a:decoration-2 prose-a:underline-offset-2 prose-a:decoration-secondary hover:prose-a:no-underline;
+  }
 
-    details.dropdown ul>li>a {
-        @apply text-base-100;
-    }
+  details.dropdown ul > li > a {
+    @apply text-base-100;
+  }
 
-    details.dropdown ul>li>a:focus {
-        @apply text-base-100;
-    }
+  details.dropdown ul > li > a:focus {
+    @apply text-base-100;
+  }
 
-    div[data-set-theme] {
-        @apply cursor-pointer;
-    }
+  div[data-set-theme] {
+    @apply cursor-pointer;
+  }
 
-    a[target="_blank"]>.external::after {
-        content: " ↗";
-    }
+  a[target="_blank"] > .external::after {
+    content: " ↗";
+  }
 
-    a.project_link {
-        @apply flex flex-col pt-4 pb-2 px-8 bg-accent text-always-black rounded-3xl text-center text-sm no-underline tooltip tooltip-bottom tooltip-primary hover:bg-accent/90;
-    }
+  a.project_link {
+    @apply flex flex-col pt-4 pb-2 px-8 bg-accent text-always-black rounded-3xl text-center text-sm no-underline tooltip tooltip-bottom tooltip-primary hover:bg-accent/90;
+  }
 
-    div.swoosh {
-        @apply flex flex-col sm:flex-row justify-center items-center my-8;
-    }
+  div.swoosh {
+    @apply flex flex-col sm:flex-row justify-center items-center my-8;
+  }
 
-    pre.mermaid {
-        @apply w-full bg-transparent font-sans;
-    }
+  pre.mermaid {
+    @apply w-full bg-transparent font-sans;
+  }
 
-    pre.mermaid span.nodeLabel {
-        @apply text-sm;
-    }
+  pre.mermaid span.nodeLabel {
+    @apply text-sm;
+  }
 }
